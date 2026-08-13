@@ -7,7 +7,7 @@ window.工具 = (function () {
   const 存 = {
     讀(k, d) {
       try {
-        const v = localStorage.getItem("創意點線面－壓克力顏料描繪:" + k);
+        const v = localStorage.getItem("創意點線面－廣告顏料描繪:" + k);
         return v === null ? d : JSON.parse(v);
       } catch (e) {
         return d;
@@ -15,7 +15,7 @@ window.工具 = (function () {
     },
     寫(k, v) {
       try {
-        localStorage.setItem("創意點線面－壓克力顏料描繪:" + k, JSON.stringify(v));
+        localStorage.setItem("創意點線面－廣告顏料描繪:" + k, JSON.stringify(v));
       } catch (e) {}
     },
   };
